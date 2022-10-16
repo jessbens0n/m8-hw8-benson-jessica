@@ -39,19 +39,39 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
-  transition: 30ms linear;
 }
 
 header a:hover {
-  color: yellow;
-  font-size: xx-large;
-  text-decoration-style: double;
+  color: #FDD219;
+  animation: backflip 6s infinite ease-in-out;
+}
+
+@keyframes backflip {
+8% {
+  transform: translateY(8px) rotate(0deg);
+}
+25% {
+  transform: translateY(-50px) rotate(-180deg);
+}
+50% {
+  transform: translateY(0px) rotate(-360deg);
+}
+100% {
+  transform: translateY(0px) rotate(-3600deg);
+}
 }
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition: 30ms linear;
+}
+
+main a:hover {
+  color: purple;
+  font-size: xx-large;
+  text-decoration-style: double;
 }
 /* end article link transitions */
 
