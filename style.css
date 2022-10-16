@@ -39,6 +39,13 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  transition: 30ms linear;
+}
+
+header a:hover {
+  color: yellow;
+  font-size: xx-large;
+  text-decoration-style: double;
 }
 /* end header link animations */
 
