@@ -102,6 +102,21 @@ section.hero > button {
   cursor: pointer;
 }
 
+section.hero > button:hover{
+  animation: bounce 1s infinite alternate linear;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+    background-color: var(--primary-color);
+  }
+  to {
+    transform: translateY(-5px);
+    background-color:#FDD219; 
+  }
+}
+
 main article {
   padding: 48px 96px;
 }
